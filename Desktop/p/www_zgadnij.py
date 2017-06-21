@@ -11,7 +11,8 @@ def getRGBfromI(RGBint):
     red =   (RGBint >> 16) & 255
     return red, green, blue
 
-
+#test
+    
 import random
 los = random.randint(0, 50)
 
