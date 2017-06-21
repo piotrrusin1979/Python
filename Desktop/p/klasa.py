@@ -4,15 +4,16 @@ def fib_r(n):
     elif n == 1:
         return 1
     else:
-        return fib_recursive(n-1) + fib_recursive(n-2)
+        return fib_r(n-1) + fib_r(n-2)
         
         
         
 def fib(n):
     for i in range(n):
-        yield fib_recursive(i)
+        yield fib_r(i)
 
 
 
 for dupcia in fib(20):
     print(dupcia)
+
